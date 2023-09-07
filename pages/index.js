@@ -32,7 +32,7 @@ const DUMMY_POSTS = [
     image: 'getting-started-nextjs.png',
     excerpt:
       'NextJs is a the React framework for production - it makes building fullstack React apps and sites a breeze and ships with built-in SSR.',
-    date: '2023-09-08',
+    date: '2023-09-09',
   },
 ];
 
