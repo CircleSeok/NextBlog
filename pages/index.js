@@ -34,14 +34,6 @@ const DUMMY_POSTS = [
       'NextJs is a the React framework for production - it makes building fullstack React apps and sites a breeze and ships with built-in SSR.',
     date: '2023-09-07',
   },
-  {
-    slug: 'getting-started-with-nextjs4',
-    title: 'Getting Started with Nextjs',
-    image: 'getting-started-nextjs.png',
-    excerpt:
-      'NextJs is a the React framework for production - it makes building fullstack React apps and sites a breeze and ships with built-in SSR.',
-    date: '2023-09-07',
-  },
 ];
 
 function HomePage() {
