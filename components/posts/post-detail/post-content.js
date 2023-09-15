@@ -1,7 +1,8 @@
 import PostHeader from './post-header';
 import styles from './post-content.module.css';
-import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+
 import Image from 'next/image';
+import ReactMarkdown from 'react-markdown';
 
 function PostContent(props) {
   const { post } = props;
@@ -29,7 +30,7 @@ function PostContent(props) {
           <div className={styles.image}>
             <Image
               src={`/images/posts/${post.slug}/${image.properties.src}`}
-              alt={image.alt}
+              alt={image.properties.alt}
               width={600}
               height={300}
             />
@@ -44,7 +45,7 @@ function PostContent(props) {
   return (
     <article className={styles.content}>
       <PostHeader title={post.title} image={imagePath} />
-      <ReactMarkdown renderers={customRenderers}>{post.content}</ReactMarkdown>
+      <ReactMarkdown components={customRenderers}>{post.content}</ReactMarkdown>
     </article>
   );
 }
