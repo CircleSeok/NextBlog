@@ -18,7 +18,7 @@ function ContactForm() {
         message: enteredMessage,
       }),
       headers: {
-        'Content-Type': 'aplication/json',
+        'Content-Type': 'application/json',
       },
     });
   }
@@ -59,7 +59,7 @@ function ContactForm() {
           ></textarea>
         </div>
         <div className={styles.actions}>
-          <button>Send Message</button>
+          <button type='submit'>Send Message</button>
         </div>
       </form>
     </section>
