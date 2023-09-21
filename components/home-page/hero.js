@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './hero.module.css';
+
 function Hero() {
   return (
     <section className={styles.hero}>
@@ -11,9 +12,10 @@ function Hero() {
           height={300}
         />
       </div>
-      <h1>Hi, I'm wonseok</h1>
+      <h1>Hi, I&apos;m wonseok</h1>
       <p>웹 개발에 관한 블로그</p>
     </section>
   );
 }
+
 export default Hero;
