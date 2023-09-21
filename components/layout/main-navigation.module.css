@@ -20,6 +20,10 @@
   margin: 0 var(--size-4);
 }
 
+.header a {
+  color: var(--color-grey-50);
+}
+
 .header a:hover,
 .header a:active,
 .header a.active {
