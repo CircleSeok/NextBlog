@@ -25,7 +25,7 @@ async function handler(req, res) {
     let client;
 
     try {
-      const mongoURI = process.env.REACT_APP_MONGO_URI;
+      const mongoURI = process.env.MONGODB_URI;
 
       client = await MongoClient.connect(mongoURI);
     } catch (error) {
